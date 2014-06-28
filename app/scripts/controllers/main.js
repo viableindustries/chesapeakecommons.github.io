@@ -1,10 +1,12 @@
 'use strict';
 
-angular.module('wwwviableindustriescomApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+angular.module('viableApp')
+  .controller('MainCtrl', function ($rootScope, $scope) {
+    
+    $rootScope.page = {
+      'title': 'Viable Industries a data, mapping, and visuzlation company',
+      'description': 'We create data, mapping, &amp; visualization tools for the environmental space',
+      'class': 'front'
+    };
+
   });

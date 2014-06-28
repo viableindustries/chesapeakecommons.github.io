@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('wwwviableindustriescomApp', [
+  .module('viableApp', [
     'ngResource',
     'ngSanitize',
     'ngRoute'
