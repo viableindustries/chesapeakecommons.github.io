@@ -1,0 +1,11 @@
+# Site settings
+title: Viable Industries
+email: grow@viableindustries.com
+description: "Empowering citizens, nonprofits, &amp; government with web &amp; mobile technologies to spark transparency, public engagement, &amp; lead to better conservation decisions"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.viableindustries.com" # the base hostname & protocol for your site
+twitter_username: viableind
+github_username:  viableindustries
+
+# Build settings
+markdown: kramdown
