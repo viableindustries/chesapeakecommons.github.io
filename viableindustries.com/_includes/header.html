@@ -12,22 +12,6 @@
             {% if page_.url == page.url %}
               <li>
                 <a class="page-link active" href="{{ page_.url | prepend: site.baseurl }}">{{ page_.title }}</a>
-                <ul>
-                  {% for secondary_page in pages %}
-                    {% if secondary_page.navigation.level == 2 and page.permalink == secondary_page.navigation.parent %}
-                      {% if page.url == secondary_page.permalink %}
-                        <li>
-                          <a class="page-link active" href="{{ secondary_page.url | prepend: site.baseurl }}">{{ secondary_page.title }}</a>
-                        </li>
-                      {% else %}
-                        <li>
-                          <a class="page-link" href="{{ secondary_page.url | prepend: site.baseurl }}">{{ secondary_page.title }}</a>
-                        </li>
-                      {% endif %}
-                    {% endif %}
-                  {% endfor %}
-
-                </ul>
               </li>
             {% else %}
               <li>
