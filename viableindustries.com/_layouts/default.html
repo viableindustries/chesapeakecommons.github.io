@@ -7,36 +7,45 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-      <meta name="description" content="{{ site.description }}">
+      <meta name="description" content="{{ page.meta.description }}">
+      <meta name="keywords" content="{{ page.meta.keywords }}">
 
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Viable Industries " />
-      <meta property="og:description" content="FracTracker shares maps, data, &amp; analyses to communicate impacts of the global oil &amp; gas industry &amp; informs actions that positively shape our energy future." />
-      <meta property="og:url" content="http://www.viableindustries.com/" />
-      <meta property="og:site_name" content="Viable Industries" />
-      <meta property="og:image" content="" />
+      <meta property="og:title" content="{{ page.meta.title }}" />
+      <meta property="og:description" content="{{ page.meta.description }}" />
+      <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+      <meta property="og:site_name" content="Viable Industries, L.L.C." />
+      <meta property="og:image" content="{{ page.meta.image }}" />
 
-      <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+      <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+      <title>{{ page.meta.title }}</title>
 
       <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-      <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   </head>
 
   <body>
 
-    {% include header.html %}
+    <main class="row">
+      {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+      <section class="site-content column-12">
+          {{ content }}
+      </section>
+
+    </main>
 
     {% include footer.html %}
 
     <script type="text/javascript" src="//use.typekit.net/eks4tss.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">
+      try {
+        Typekit.load();
+      }catch(e){
+        console.error('Could not load Typekit');
+      }
+    </script>
     
     <script type="text/javascript">
 

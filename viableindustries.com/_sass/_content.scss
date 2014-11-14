@@ -1,0 +1,55 @@
+//
+// _content.scss
+//
+// This stylesheet is written in SASS(1) and contains site specific layout
+// elements.
+//
+// @see (1) http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+//
+
+//
+// Site Header
+//
+.site-header {
+  left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: fixed;
+  top: 0;
+}
+
+
+//
+// Site Content
+//
+.site-content {
+  left: 23.75%;
+  position: relative;
+  top: 0;
+}
+
+.site-title {
+  display: block;
+  margin-top: 196px;
+
+  img {
+    max-width: 11.25em;
+  }
+}
+
+//
+// Site Footer
+//
+.site-footer {  
+  left: 23.75%;
+  position: relative;
+  top: 0;
+}
+
+
+//
+// Images
+//
+img {
+  max-width: 100%;
+}

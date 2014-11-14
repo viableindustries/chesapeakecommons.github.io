@@ -1,19 +1,42 @@
-<header class="site-header">
+<header class="site-header column-4">
 
-  <div class="wrapper">
+    <a class="site-title" href="{{ site.baseurl }}/" title="{{ site.title }}">
+      <img src="/images/logo-ViableIndustries-Logotype-Black.svg" alt="Viable Industries Corporate Logotype" />
+    </a>
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <nav class="navigation-primary">
+      <ul>
+        {% assign pages = (site.pages | sort: 'order', 'last') %}
+        {% for page_ in pages %}
+          {% if page_.title and page_.navigation.level == 1 %}
+            {% if page_.url == page.url %}
+              <li>
+                <a class="page-link active" href="{{ page_.url | prepend: site.baseurl }}">{{ page_.title }}</a>
+                <ul>
+                  {% for secondary_page in pages %}
+                    {% if secondary_page.navigation.level == 2 and page.permalink == secondary_page.navigation.parent %}
+                      {% if page.url == secondary_page.permalink %}
+                        <li>
+                          <a class="page-link active" href="{{ secondary_page.url | prepend: site.baseurl }}">{{ secondary_page.title }}</a>
+                        </li>
+                      {% else %}
+                        <li>
+                          <a class="page-link" href="{{ secondary_page.url | prepend: site.baseurl }}">{{ secondary_page.title }}</a>
+                        </li>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
 
-    <nav class="site-nav">
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                </ul>
+              </li>
+            {% else %}
+              <li>
+                <a class="page-link inactive" href="{{ page_.url | prepend: site.baseurl }}">{{ page_.title }}</a>
+              </li>
+            {% endif %}
           {% endif %}
         {% endfor %}
-      </div>
+      </ul>
     </nav>
-
-  </div>
 
 </header>

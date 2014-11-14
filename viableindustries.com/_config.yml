@@ -9,3 +9,5 @@ github_username:  viableindustries
 
 # Build settings
 markdown: kramdown
+
+include: ['_pages']

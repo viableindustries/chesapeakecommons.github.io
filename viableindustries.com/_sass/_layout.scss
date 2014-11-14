@@ -1,236 +1,469 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+//
+// _layout.scss
+//
+// This stylesheet is written in SASS(1) and contains site wide layout
+// specifications. The grid system within this page was generated using
+// the Susy(2) build tool.
+//
+// @see (1) http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+// @see (2) http://susydocs.oddbird.net/en/latest/
+//
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+// bower:scss
+@import "../bower_components/susy/sass/_susy.scss";
+// endbower
+
+
+//
+// Default Screen Sizes
+//
+$screen-xl-min: 100em; // Large devices 1280px and up
+$screen-xl-min-container: 90em;
+
+$screen-lg-min: 80em; // Large devices 1280px and up
+
+$screen-md-min: 55em; // Medium devices 880px and up
+$screen-md-min-container: 80em;
+
+$screen-sm-min: 48em; // Small devices 768px and up
+
+$screen-xs-landscape-min: 30em; // Extra small device, landscape orientation up to 480px
+$screen-xs-portrait-min: 20em; // Extra small device, portrait orientation up to 320px
+
+
+//
+// Grid System
+//
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  container: auto,
+  container-position: center,
+  columns: 16,
+  gutters: 0.25,
+  column-width: 4em,
+  global-box-sizing: border-box
+);
+
+
+* {
+  box-sizing: border-box;
 }
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
+//
+// Default to a small device size, such as a smart phone
+//
+.container {
+  @include container($screen-sm-min); // Base pixel size is 16px, so 80em === 1280px
+  margin: 0;
+  padding: 0 1em;
+}
+
+.element-invisible {
+  display: none;
+}
+
+.element-hidden {
+  visibility: hidden;
+}
+
+  .row {
     float: left;
+    margin: 8px 0;
+    padding: 0;
+    width: 100%;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
-
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
+    .row {
+      margin: 0;
     }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+    &.nested-row {
+      margin-bottom: 32px;
     }
+  }
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
-}
-
-
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
+  .column-flex {
+    display: inline-block;
     float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
+    margin-left: 0.625%;
+    margin-right: 0.625%;
+  }
 
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
+  [class*="column-"] {
+    box-sizing: border-box;
+    min-height: 1px;
+  }
 
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+  //
+  // Extra Small Device sizes
+  //
+  //  Nexus 5 phone and iPhone
+  //
+  @media screen and (min-width: $screen-xs-landscape-min) {
+    body {
+      
     }
 
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+    .hidden-sm {
+      display: none;
     }
-}
+  }
 
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
+  @media screen and (min-width: $screen-xs-portrait-min) {
+    body {
 
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
     }
 
-    h3 {
-        font-size: 26px;
+    .hidden-sm {
+      display: none;
+    }
+  }
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+  //
+  // Small Device sizes
+  //
+  //  Tablets such as the Nexus or iPad
+  //
+  @media screen and (min-width: $screen-sm-min) {
+    .container {
+      @include container($screen-sm-min);
     }
 
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+    .hidden-sm {
+      display: none;
     }
+
+    .visible-sm {
+      display: block;
+    }
+
+    [class*="column-"] {
+      box-sizing: border-box;
+    }
+
+    .column-1 {
+      @include span(4);
+    }
+    .column-2 {
+      @include span(4);
+    }
+    .column-3 {
+      @include span(4);
+    }
+    .column-4 {
+      @include span(4);
+    }
+    .column-5 {
+      @include span(8);
+    }
+    .column-6 {
+      @include span(8);
+    }
+    .column-7 {
+      @include span(8);
+    }
+    .column-8 {
+      @include span(8);
+    }
+    .column-9 {
+      @include span(12);
+    }
+    .column-10 {
+      @include span(12);
+    }
+    .column-11 {
+      @include span(12);
+    }
+    .column-12 {
+      @include span(12);
+    }
+    .column-13 {
+      @include span(16);
+    }
+    .column-14 {
+      @include span(16);
+    }
+    .column-15 {
+      @include span(16);
+    }
+    .column-16 {
+      @include span(16);
+    }
+  }  
+
+  //
+  // Medium Device sizes
+  //
+  //   Medium desktop displays such as 13" and below laptops
+  //
+  @media screen and (min-width: $screen-md-min) {
+    .container {
+      @include container($screen-md-min-container);
+    }
+
+    .hidden-md {
+      display: none;
+    }
+
+    .hidden-sm,
+    .visible-md,
+    .hidden-lg {
+      display: block;
+    }
+
+    .map {
+      display: inline-block;
+      height: 40em;
+      width: 100%;
+    }
+
+    .column-1 {
+      @include span(1);
+    }
+    .column-2 {
+      @include span(2);
+    }
+    .column-3 {
+      @include span(3);
+    }
+    .column-4 {
+      @include span(4);
+    }
+    .column-5 {
+      @include span(5);
+    }
+    .column-6 {
+      @include span(6);
+    }
+    .column-7 {
+      @include span(7);
+    }
+    .column-8 {
+      @include span(8);
+    }
+    .column-9 {
+      @include span(9);
+    }
+    .column-10 {
+      @include span(10);
+    }
+    .column-11 {
+      @include span(11);
+    }
+    .column-12 {
+      @include span(12);
+    }
+    .column-13 {
+      @include span(13);
+    }
+    .column-14 {
+      @include span(14);
+    }
+    .column-15 {
+      @include span(15);
+    }
+    .column-16 {
+      @include span(16);
+    }
+
+  }
+
+  //
+  // Large Device sizes
+  //
+  //   Large desktop displays of 1280px and higher, for example Macbook Pro, Macbook Air, and other desktops
+  //
+  @media screen and (min-width: $screen-lg-min) {
+    .container {
+      @include container($screen-lg-min);
+    }
+
+    .hidden-lg {
+      display: none;
+    }
+
+    .map {
+      display: inline-block;
+      height: 40em;
+      width: 100%;
+    }
+
+    .visible-lg,
+    .hidden-sm,
+    .hidden-md {
+      display: block;
+    }
+
+    .column-1 {
+      @include span(1);
+    }
+    .column-2 {
+      @include span(2);
+    }
+    .column-3 {
+      @include span(3);
+    }
+    .column-4 {
+      @include span(4);
+    }
+    .column-5 {
+      @include span(5);
+    }
+    .column-6 {
+      @include span(6);
+    }
+    .column-7 {
+      @include span(7);
+    }
+    .column-8 {
+      @include span(8);
+    }
+    .column-9 {
+      @include span(9);
+    }
+    .column-10 {
+      @include span(10);
+    }
+    .column-11 {
+      @include span(11);
+    }
+    .column-12 {
+      @include span(12);
+    }
+    .column-13 {
+      @include span(13);
+    }
+    .column-14 {
+      @include span(14);
+    }
+    .column-15 {
+      @include span(15);
+    }
+    .column-16 {
+      @include span(16);
+    }
+  }
+
+
+  //
+  // Large Device sizes
+  //
+  //   Large desktop displays of 1600px and higher, for example Apple Cinema Displays and Televisions
+  //
+  @media screen and (min-width: $screen-xl-min) {
+    body {
+      font-size: 118%;
+    }
+    
+    .container {
+      @include container($screen-lg-min);
+    }
+
+    .map {
+      display: inline-block;
+      height: 60em;
+      width: 100%;
+    }
+
+    .hidden-lg {
+      display: none;
+    }
+
+    .visible-lg,
+    .hidden-sm,
+    .hidden-md {
+      display: block;
+    }
+
+    .column-1 {
+      @include span(1);
+    }
+    .column-2 {
+      @include span(2);
+    }
+    .column-3 {
+      @include span(3);
+    }
+    .column-4 {
+      @include span(4);
+    }
+    .column-5 {
+      @include span(5);
+    }
+    .column-6 {
+      @include span(6);
+    }
+    .column-7 {
+      @include span(7);
+    }
+    .column-8 {
+      @include span(8);
+    }
+    .column-9 {
+      @include span(9);
+    }
+    .column-10 {
+      @include span(10);
+    }
+    .column-11 {
+      @include span(11);
+    }
+    .column-12 {
+      @include span(12);
+    }
+    .column-13 {
+      @include span(13);
+    }
+    .column-14 {
+      @include span(14);
+    }
+    .column-15 {
+      @include span(15);
+    }
+    .column-16 {
+      @include span(16);
+    }
+  }
+
+//
+// Generic
+//
+body {
+  background-color: $color-white-base;
+  color: $color-black-base;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.rule-above {
+  border: 0;
+  border-top: 1px solid darken($color-white-base, 5%);
+}
+
+.rule-right {
+  border-right: 1px solid darken($color-white-base, 5%);
+}
+
+.rule-below {
+  border: 0;
+  border-bottom: 1px solid darken($color-white-base, 5%);
+}
+
+.rule-left {
+  border-left: 1px solid darken($color-white-base, 5%);
+}
+
+.no-rule {
+  border: 0 !important;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
 }
