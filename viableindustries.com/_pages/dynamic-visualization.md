@@ -1,8 +1,16 @@
 ---
 permalink: "/expertise/dynamic-real-time-data-visualization/"
-layout: page
+layout: expertise
 date:   2014-11-12 13:49:54
-title: "Making Sense of Complex Data"
+title: "Dynamic Visualizations"
+section: 
+  text: "Expertise"
+  url: "/expertise/"
+class: "page-dynamic-visualizations"
+background:
+  image: "/images/header-Expertise-DynamicVisualizations.jpg"
+  position: "0 -750px"
+  text: "text-white"
 meta:
   title: "Dynamic, Real-Time Data Visualization"
   description: "We help organizations visualize environmental, proprietary, government, education, public and open data in meaningful ways"
@@ -13,11 +21,19 @@ navigation:
   parent: "/expertise/"
 ---
 
+## Make great decisions based on your data. We help your organization visualize your data in meaningful ways.
+
+## We help organizations visualize their data in meaningful ways, enabling them to make great decisions.
+
 ### Overview
+
+## Effective decisions are made when choices are clear. We help clear the clutter from the data that helps your organization make those decisions.
+
+## Great decisions are made when the choices are clear. We help your organization remove the clutter to see a clear picture..
 
 Data comes from everywhere these days, from government and vendor websites to your customers and the general public. When you get your hands on it, it’s often disappointing to find you can’t open the files because their too large, or are in a format that is hard to use.
 
-We help organizations structure that data into meaningful collections, make it accessible through a powerful user interface, and visualize it in ways that make sense to your audience.
+We help organizations structure that data into meaningful collections, make it accessible through powerful user interface, and visualize it in ways that make sense to your audience.
 
 <strong>Background Image</strong>: Ariel city/community view where “details are hard to see or make sense of, needing to be made clear by ‘zooming in’” (see images no pages below)
 
@@ -39,12 +55,15 @@ The Features selection of the Data Visualization page should contain 4 slides co
 ### Performance
 
 < icon >
-Speed
-A sentence about how damn fast our stuff is.
+Speed/Caching
+A sentence about how damn fast our stuff is, Enhanced map and data caching
 
 < icon >
-Caching
-Enhanced map and data caching
+Always on/Offline capabilities
+
+< icon >
+Platform agnostic
+
 
 
 ### Technology

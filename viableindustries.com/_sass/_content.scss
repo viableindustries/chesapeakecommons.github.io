@@ -12,10 +12,13 @@
 //
 .site-header {
   left: 0;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
   padding-left: 16px;
   padding-right: 16px;
   position: fixed;
   top: 0;
+  width: 23.75%;
 }
 
 
@@ -23,17 +26,62 @@
 // Site Content
 //
 .site-content {
-  left: 23.75%;
+  float: left;
+  left: 25%;
+  margin-left: 0;
+  margin-right: 0;
   position: relative;
   top: 0;
+  width: 75%;
 }
 
+  .page-header {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    min-height: 286px;
+    padding: 164px 32px 0;
+
+    h1 {
+      border-top: 1px solid $color-white-base;
+      display: inline-block;
+      font-family: $font-sans;
+      font-size: 2em;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+
+      margin: 8px 0 0;
+      padding: 16px 32px 16px 0;
+
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: $font-sans;
+      font-size: 1em;
+      font-weight: 200;
+      letter-spacing: 0.125em;
+
+      margin: 0;
+      padding: 0;
+
+      text-transform: uppercase;
+    }
+  }
+
 .site-title {
-  display: block;
+  display: inline-block;
+  margin-left: -8px;
   margin-top: 196px;
+  padding: 16px 32px 8px 8px;
+
+  &.active {
+    background-color: $color-brand-base;
+  }
 
   img {
     max-width: 11.25em;
+    min-width: 11.25em;
+    width: 11.25em;
   }
 }
 

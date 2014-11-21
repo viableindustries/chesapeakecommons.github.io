@@ -18,12 +18,12 @@
     padding: 0;
 
     li {
+      display: block;
       font-family: $font-sans;
       font-size: 1em;
       font-weight: 700;
-      line-height: 1.75em;
       list-style-type: none;
-      margin: 0;
+      margin: 0 0 2px;
       padding: 0;
       text-transform: uppercase;
 
@@ -32,13 +32,25 @@
       a:link,
       a:visited {
         color: $color-black-base;
+        display: inline-block;
+        line-height: 1;
+        padding: 8px 32px 4px 8px;
+        position:relative;
         text-decoration: none;
+
+        &.active {
+          background-color: $color-brand-base;
+          color: $color-black-base;
+          text-decoration: none;
+        }
       }
 
       a:hover {
-        color: $color-yellow-base;
+        background-color: $color-brand-base;
+        color: $color-black-base;
         text-decoration: none;
       }
+
     }
   }
 }

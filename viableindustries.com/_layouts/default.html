@@ -27,13 +27,10 @@
 
   <body>
 
-    <main class="row">
-      {% include header.html %}
+    {% include header.html %}
 
-      <section class="site-content column-12">
-          {{ content }}
-      </section>
-
+    <main class="site-content">
+        {{ content }}
     </main>
 
     {% include footer.html %}

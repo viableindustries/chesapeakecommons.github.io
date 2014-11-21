@@ -1,9 +1,9 @@
 ---
-permalink: "/contact/"
+permalink: "/about/"
 layout: page
-title:  "Contact"
+title:  "About"
 navigation:
   level: 1
   parent: null
-  order: 5
+order: 4
 ---
