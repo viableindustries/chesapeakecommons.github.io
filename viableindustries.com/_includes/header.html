@@ -21,11 +21,11 @@
           {% if page_.title and page_.navigation.level == 1 %}
             {% if page_.url == page.url %}
               <li>
-                <a class="page-link active" href="{{ page_.url | prepend: site.baseurl }}">{{ page_.title }}</a>
+                <a class="page-link active" href="{{ page_.url | prepend: site.baseurl }}">{{ page_.navigation.title }}</a>
               </li>
             {% else %}
               <li>
-                <a class="page-link inactive" href="{{ page_.url | prepend: site.baseurl }}">{{ page_.title }}</a>
+                <a class="page-link inactive" href="{{ page_.url | prepend: site.baseurl }}">{{ page_.navigation.title }}</a>
               </li>
             {% endif %}
           {% endif %}

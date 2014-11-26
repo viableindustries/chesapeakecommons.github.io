@@ -1,8 +1,12 @@
 ---
 permalink: "/expertise/"
 layout: page
-title:  "Expertise"
+title:  "What others say we’re great at"
+section: 
+  text: "Expertise"
+  url: "/expertise/"
 navigation:
+  title: "Expertise"
   level: 1
   parent: null
 order: 1

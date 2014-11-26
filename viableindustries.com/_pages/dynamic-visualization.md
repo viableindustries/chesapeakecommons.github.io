@@ -1,16 +1,12 @@
 ---
 permalink: "/expertise/dynamic-real-time-data-visualization/"
-layout: expertise
+layout: page
 date:   2014-11-12 13:49:54
-title: "Dynamic Visualizations"
+title: "Dynamic Data Visualizations"
 section: 
   text: "Expertise"
   url: "/expertise/"
 class: "page-dynamic-visualizations"
-background:
-  image: "/images/header-Expertise-DynamicVisualizations.jpg"
-  position: "0 -750px"
-  text: "text-white"
 meta:
   title: "Dynamic, Real-Time Data Visualization"
   description: "We help organizations visualize environmental, proprietary, government, education, public and open data in meaningful ways"
