@@ -26,33 +26,32 @@
 // Site Content
 //
 .site-content {
+  background-color: rgb(252,252,252);
   float: left;
   left: 25%;
-  margin-left: 0;
-  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+  margin-top: 32px;
+  padding: 32px;
   position: relative;
   top: 0;
-  width: 75%;
+  width: 70%;
 }
 
   .page-header {
     background-position: 0 0;
     background-repeat: no-repeat;
-    min-height: 286px;
-    padding: 164px 32px 0;
+    padding: 64px 32px 0;
 
     h1 {
-      border-top: 1px solid $color-white-base;
+      border-top: 1px solid darken($color-white-base, 5%);
+
       display: inline-block;
-      font-family: $font-sans;
-      font-size: 2em;
-      font-weight: 600;
-      letter-spacing: 0.025em;
+      margin: 16px -16px 0;
+      padding: 16px;
 
-      margin: 8px 0 0;
-      padding: 16px 32px 16px 0;
-
-      text-transform: uppercase;
+      width: 100%;
     }
 
     h2 {
@@ -65,7 +64,17 @@
       padding: 0;
 
       text-transform: uppercase;
+
+      a,
+      a:link,
+      a:visited {
+        background-color: transparent;
+      }
     }
+  }
+
+  .page-content {
+    padding: 0 32px;
   }
 
 .site-title {
@@ -85,13 +94,70 @@
   }
 }
 
+
 //
 // Site Footer
 //
-.site-footer {  
-  left: 23.75%;
+.site-footer {
+  background-color: rgb(248,248,248);
+  float: left;
+  left: 25%;
   position: relative;
-  top: 0;
+  margin-bottom: 32px;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+  max-width: 2048px;
+  padding: 64px 64px 32px;
+  width: 70%;
+
+  h5 {
+    font-family: $font-sans;
+    font-size: 0.875em;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  
+  p,
+  address {
+    font-family: $font-serif;
+    font-size: 0.875em;
+    font-weight: 300;
+    margin-bottom: 32px;
+  }
+
+  ul {
+    padding-left: 24px;
+  }
+
+  li {
+    font-family: $font-serif;
+    font-size: 0.875em;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+}
+
+
+//
+// Site Copyright
+//
+.site-copyright {
+  float: left;
+  left: 25%;
+  margin-bottom: 64px;
+  margin-left: 0.625%;
+  margin-right: 0.625%;
+  padding: 0 64px;
+  position: relative;
+  max-width: 2048px;
+  width: 70%;
+
+  p {
+    font-family: $font-sans;
+    font-size: 0.875em;
+    font-weight: 300;
+  }
 }
 
 

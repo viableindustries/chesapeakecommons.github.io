@@ -21,30 +21,20 @@ navigation:
   parent: "/expertise/"
 ---
 
+<i class="icon retinaicon-business-001"></i>
+
 ## Make great decisions based on your data. We help your organization visualize your data in meaningful ways.
 
 ## We help organizations visualize their data in meaningful ways, enabling them to make great decisions.
 
-### Overview
-
-## Effective decisions are made when choices are clear. We help clear the clutter from the data that helps your organization make those decisions.
-
-## Great decisions are made when the choices are clear. We help your organization remove the clutter to see a clear picture..
-
-Data comes from everywhere these days, from government and vendor websites to your customers and the general public. When you get your hands on it, it’s often disappointing to find you can’t open the files because their too large, or are in a format that is hard to use.
-
-We help organizations structure that data into meaningful collections, make it accessible through powerful user interface, and visualize it in ways that make sense to your audience.
-
-<strong>Background Image</strong>: Ariel city/community view where “details are hard to see or make sense of, needing to be made clear by ‘zooming in’” (see images no pages below)
-
-![Supporting Image](/images/expertise-visualization-Background001.jpg)
-![Supporting Image](/images/expertise-visualization-Background002.jpg)
+## We help organizations visualize their data in ways that enable them to make meaningful decisions.
 
 ### Features
 
 The Features selection of the Data Visualization page should contain 4 slides containing details on Maps, Charts, Reports, and Custom. Each slide should cover one of those four topics as it applies to Data Visualization, a sentence at most describing how it is used, and an image showing a real world example of the 4 visualization elements.
 
-#### Maps
+#### Geospatial Analysis
+We help organizations make sense of their data in geospatial ways.
 
 #### Charts
 

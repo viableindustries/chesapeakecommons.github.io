@@ -1,7 +1,10 @@
 ---
-permalink: "/about/privacy-policy/"
+permalink: "/legal/privacy-policy/"
 layout: page
 title:  "Privacy Policy"
+section: 
+  text: "Legal"
+  url: "/legal/"
 date:   2014-09-30 21:08:54
 navigation:
   level: 0

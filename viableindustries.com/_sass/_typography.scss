@@ -57,7 +57,8 @@ h4,
 h5,
 h6,
 p,
-li {
+li,
+address {
   font-family: $font-serif;
   color: $color-black-base;
   line-height: 1.5;
@@ -65,22 +66,22 @@ li {
 }
 
 h1 {
-  font-size: 3.5em;
-  font-weight: 200;
-  line-height: 1;
+  font-size: 3.0em;
+  font-weight: 100;
+  line-height: 1.2;
   margin-bottom: 16px;
   margin-top: 0;
 }
 
 h2, p.lead {
-  font-size: 1.75em;
+  font-size: 2.0em;
   line-height: 1.2;
   margin-bottom: 16px;
   margin-top: 0;
 }
 
 p.introduction {
-  font-size: 2em;
+  font-size: 1.75em;
   line-height: 1.4;
   max-width: 70%;
   margin: 0 auto;
@@ -107,9 +108,12 @@ h3.alt {
 }
 
 h4 {
-  font-size: 1.25em;
-  font-weight: 100;
-  margin: 0 0 24px;
+  font-family: $font-sans;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  margin: 32px 0 8px;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -135,14 +139,16 @@ em {
 ul {
   list-style-type: square;
   margin: 0 0 32px;
+  max-width: 60.94em;
 }
 
 ol {
-  // default settings
+  margin: 0 0 32px;
+  max-width: 60.94em;
 }
 
 li {
-  font-size: 1.000em;
+  font-size: 1.25em;
 }
 
 hr {
@@ -163,7 +169,8 @@ a,
 a:active,
 a:link,
 a:visited {
-  color: $color-blue-base;
+  background-color: rgba($color-brand-base, 0.5);
+  color: $color-black-base;
   cursor: pointer;
   text-decoration: none;
 
@@ -173,8 +180,9 @@ a:visited {
 }
 
 a:hover {
-  color: darken($color-blue-base, 5%);
-  text-decoration: underline;
+  background-color: $color-brand-base;
+  color: $color-black-base;
+  text-decoration: none;
 
   &.highlight {
     background-color: transparent;
