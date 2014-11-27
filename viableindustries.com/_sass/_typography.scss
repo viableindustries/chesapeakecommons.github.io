@@ -153,7 +153,7 @@ li {
 
 hr {
   border: 0;
-  border-top: 1px solid rgb(225,225,225);
+  border-top: 1px solid rgb(229,229,229);
   clear: both;
   float: left;
   margin-top: 32px;
@@ -169,10 +169,14 @@ a,
 a:active,
 a:link,
 a:visited {
-  background-color: rgba($color-brand-base, 0.5);
+  background-image: linear-gradient(to right, $color-brand-base 50%, transparent 50%);
+  background-size: 200% 100%;
   color: $color-black-base;
   cursor: pointer;
   text-decoration: none;
+  transition: background-position .25s;
+  -moz-transition: background-position .25s;
+  -webkit-transition: background-position .25s;
 
   &.highlight {
     background-color: $color-highlight-base;
@@ -180,8 +184,7 @@ a:visited {
 }
 
 a:hover {
-  background-color: $color-brand-base;
-  color: $color-black-base;
+  background-position: 100% 0;
   text-decoration: none;
 
   &.highlight {
