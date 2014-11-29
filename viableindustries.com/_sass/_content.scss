@@ -33,16 +33,17 @@
   margin-left: 0.625%;
   margin-right: 0.625%;
   margin-top: 32px;
-  padding: 32px;
+  padding: 32px 0;
   position: relative;
   top: 0;
   width: 70%;
 }
 
-  .page-header {
+  .page-header,
+  .post-header {
     background-position: 0 0;
     background-repeat: no-repeat;
-    padding: 64px 32px 0;
+    padding: 64px 64px 0;
 
     h1 {
       border-top: 1px solid darken($color-white-base, 5%);
@@ -74,8 +75,21 @@
     }
   }
 
-  .page-content {
-    padding: 0 32px;
+  .page-content,
+  .post-content {
+    display: block;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    ol {
+      padding: 0 64px;
+    }
   }
 
 .site-title {
@@ -92,6 +106,23 @@
     max-width: 11.25em;
     min-width: 11.25em;
     width: 11.25em;
+  }
+}
+
+.post-sidebar {
+  text-align: center;
+}
+
+.post-author {
+  border-top: 1px solid #E5E5E5;
+  margin: 32px 48px;
+  padding: 32px 16px;
+
+  .author-name {
+  }
+
+  .author-image {
+    border-radius: 50%;
   }
 }
 
