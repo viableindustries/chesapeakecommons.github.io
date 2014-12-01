@@ -187,8 +187,14 @@
 
   p {
     font-family: $font-sans;
-    font-size: 0.875em;
+    font-size: 0.75em;
     font-weight: 300;
+  }
+
+  .page-last-updated {
+    color: rgb(196,196,196);
+    letter-spacing: 0.0125em;
+    font-size: 0.875em;
   }
 }
 

@@ -48,5 +48,10 @@
         We are located at 6101 Penn Ave, Suite 201 in Pittburgh, Pennsylvania 15206. Our offices are on the second floor of the Liberty Bank Building in The Beauty Shoppe's innovative working space.
       </p>
     </div>
+    <div class="column-8">
+      <p class="align-right page-last-updated" itemprop="datePublished" content="{{ page.path | file_date | date_to_xmlschema }}">
+        <em>Last updated {{ page.path | file_date | date: "%B %-d, %Y" }}</em>
+      </p>
+    </div>
   </div>
 </footer>

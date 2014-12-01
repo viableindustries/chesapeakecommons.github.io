@@ -5,7 +5,6 @@ title:  "Articles"
 meta:
   title: "Articles on mapping, visualizations, and data"
   description: ""
-  keywords: ""
 author:
   name: "Joshua Powell"
   bio: "Joshua Powell, Founder and Managing Director, Viable Industries, L.L.C."

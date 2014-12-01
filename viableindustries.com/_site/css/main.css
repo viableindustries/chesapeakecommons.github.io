@@ -902,8 +902,12 @@ figure {
   width: 70%; }
   .site-copyright p {
     font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    font-size: 0.875em;
+    font-size: 0.75em;
     font-weight: 300; }
+  .site-copyright .page-last-updated {
+    color: #c4c4c4;
+    letter-spacing: 0.0125em;
+    font-size: 0.875em; }
 
 img {
   max-width: 100%; }
