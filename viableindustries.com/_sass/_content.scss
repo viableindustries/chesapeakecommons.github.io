@@ -199,3 +199,98 @@
 img {
   max-width: 100%;
 }
+
+
+//
+// Articles
+//
+
+  //
+  // Landing Page
+  //
+  .article-container {
+    float: left;
+    width: 100%;
+
+    .article {
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+
+      float: left;
+      height: 316px;
+      position: relative;
+      width: 33.33333333%;
+
+      a {
+        background-image: none;
+        height: 100%;
+        margin: 0;
+        padding: 16px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .background-overlay {
+        background-color: rgba(242,242,242,0.75);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+      }
+
+      .article-date,
+      .article-title,
+      .article-author {
+        display: block;
+      }
+
+      .article-date {
+        font-family: $font-sans;
+        font-size: 0.75em;
+        font-weight: 500;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+
+      .article-title {
+        font-family: $font-sans;
+        font-size: 1.25em;
+        font-weight: 500;
+        line-height: 1.25;
+        margin-bottom: 8px;
+
+        strong {
+          font-weight: 500;
+        }
+      }
+
+      .article-author {
+        font-family: $font-serif;
+        font-size: 0.875em;
+        font-weight: 300;
+      }
+
+      .article-author-image {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        display: inline-block;
+        float: left;
+        height: 32px;
+        width: 32px;
+      }
+
+      .article-author-name {
+        float: left;
+        margin-top: 8px;
+        margin-left: 8px;
+      }
+    }
+  }

@@ -170,11 +170,8 @@ li {
 hr {
   border: 0;
   border-top: 1px solid rgb(229,229,229);
-  clear: both;
-  float: left;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  width: 100%;
+  display: block;
+  margin: 32px 48px;
 }
 
 
