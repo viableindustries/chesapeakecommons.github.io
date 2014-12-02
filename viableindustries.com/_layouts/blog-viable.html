@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="column-16">
+
+  <header class="page-header">
+    <h2>
+      <a href="{{ page.section.url }}" title="{{ page.title }} is part of the {{ page.section.text }} section">
+        {{ page.section.text }}
+      </a>
+    </h2>
+    <h1 class="page-title">{{ page.title }}</h1>
+  </header>
+
+  <article class="page-content">
+    {{ content }}
+  </article>
+
+  </div>
+</div>
+
+
+<div class="article-container article-viable-container">
+  {% for post in site.posts %}
+    <article class="article">
+      <div class="background-image" style="background-image: url({{ post.image }});"></div>
+      <a href="{{ post.url }}">        
+        <span class="article-title">{{ post.title }}</span><br />
+        <span class="article-subtitle">{{ post.subtitle }}</span><br />
+        <span class="article-date">{{ post.date | date: "%m/%Y" }}</span>
+        
+        <!--
+        <span class="article-author">
+          <img class="article-author-image" src="{{ post.author.img }}?size=32" width="32" alt="{{ post.author.bio }}" />
+          <span class="article-author-name">{{ post.author.name }}</span>
+        </span>
+        -->
+      </a>
+      <div class="background-overlay"></div>
+    </article>
+  {% endfor %}
+</div>
