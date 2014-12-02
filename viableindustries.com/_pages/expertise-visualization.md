@@ -1,8 +1,8 @@
 ---
-permalink: "/expertise/dynamic-real-time-data-visualization/"
+permalink: "/expertise/visualization/"
 layout: page
 date:   2014-11-12 13:49:54
-title: "Dynamic Data Visualizations"
+title: "We answer questions with thoughtfully designed analytics"
 section: 
   text: "Expertise"
   url: "/expertise/"
@@ -13,6 +13,7 @@ meta:
 navigation:
   level: 2
   parent: "/expertise/"
+  title: "Visualization"
 ---
 
 <i class="icon retinaicon-business-001"></i>
@@ -54,9 +55,11 @@ Platform agnostic
 
 ### Examples
 
-We should have 2-4 examples for this. The content should appear in blocks and each one should focus on a specific application of the type of visuzalization. For example, Maps could be the BlueWaterBaltimore home page, Charts could be the Ashtracker station page, Reports could be the NFWF metrics, and Custom could be the FPW Grants single page.
+Content in this section should appear in columns with a title, a one line description, and a link to the case study page. Alternately, we may add an icon to these if it's appropriate.
 
-Each of those should link to a specific Partner Case Study page (e.g., HarborAlert, Ashtracker, Foundation PA Watersheds, NFWF).
+1. Ashtracker
+2. Blue Water Baltimore
+3. Animal Feeding Operations (via @chescommons)
 
 ### Inquiry
 

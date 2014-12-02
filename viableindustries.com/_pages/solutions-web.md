@@ -13,4 +13,5 @@ meta:
 navigation:
   level: 2
   parent: "/solutions/"
+  title: "Web"
 ---

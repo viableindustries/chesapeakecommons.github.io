@@ -8,7 +8,7 @@ section:
 navigation:
   title: "Transparency"
   level: 2
-  parent: null
+  parent: "/about/"
 order: 1
 ---
 We belive that strong relationships in our personal lives or in our business, are built on communication, honesty, and trust. Without these three elements most any relationship is doomed.

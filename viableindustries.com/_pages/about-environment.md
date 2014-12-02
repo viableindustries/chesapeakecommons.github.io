@@ -8,7 +8,7 @@ section:
 navigation:
   title: "Environment"
   level: 2
-  parent: null
+  parent: "/about/"
 order: 3
 ---
 

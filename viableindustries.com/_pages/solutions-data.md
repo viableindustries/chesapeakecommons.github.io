@@ -2,7 +2,7 @@
 permalink: "/solutions/data/"
 layout: page
 date:   2014-12-02 21:49:54
-title: "We "
+title: "We manage and analyze your data"
 section: 
   text: "Solutions"
   url: "/solutions/"
@@ -13,4 +13,5 @@ meta:
 navigation:
   level: 2
   parent: "/solutions/"
+  title: "Data"
 ---

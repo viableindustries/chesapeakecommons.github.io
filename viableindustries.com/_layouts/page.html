@@ -17,5 +17,27 @@ layout: default
     {{ content }}
   </article>
 
+  {% if page.navigation.level == 1 %}
+  <aside class="page-sidebar">
+    <h3>More on {{ page.section.text }}</h3>
+    <ul>
+    {% assign pages = (site.pages | sort: 'order', 'last') %}
+    {% for page_ in pages %}
+      {% if page_.title and page_.navigation.parent == page.url and page_.navigation.level == 2 %}
+        {% if page_.url == page.url %}
+          <li>
+            <a class="page-link active" href="{{ page_.url | prepend: site.baseurl }}">{{ page_.navigation.title }}</a>
+          </li>
+        {% else %}
+          <li>
+            <a class="page-link inactive" href="{{ page_.url | prepend: site.baseurl }}">{{ page_.navigation.title }}</a>
+          </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
+
   </div>
 </div>

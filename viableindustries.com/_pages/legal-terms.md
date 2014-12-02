@@ -8,7 +8,8 @@ section:
 date:   2014-09-30 21:08:54
 navigation:
   level: 0
-  parent: null
+  parent: "/legal/"
+  title: "Terms of Use"
 ---
 #### I. Terms
 

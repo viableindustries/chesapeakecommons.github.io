@@ -8,7 +8,8 @@ section:
 date:   2014-09-30 21:08:54
 navigation:
   level: 0
-  parent: null
+  parent: "/legal/"
+  title: "Privacy Policy"
 ---
 Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate, disclose, and make use of personal information. The following outlines our privacy policy.
 

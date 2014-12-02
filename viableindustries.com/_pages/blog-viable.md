@@ -14,9 +14,9 @@ section:
   text: "resources"
   url: "/resources/"
 navigation:
-  title: "Resources"
-  level: 1
-  parent: null
+  title: "Viable Example"
+  level: 2
+  parent: "/resources/"
 order: 5
 ---
 We consider sharing ideas, patterns, and code another great way we can serve our partners. We've dedicated this part of our site to passing along those things to the community.

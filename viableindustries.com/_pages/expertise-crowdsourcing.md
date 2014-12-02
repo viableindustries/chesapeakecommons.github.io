@@ -13,4 +13,13 @@ meta:
 navigation:
   level: 2
   parent: "/expertise/"
+  title: "Crowdsourcing"
 ---
+
+
+### Examples
+
+Content in this section should appear in columns with a title, a one line description, and a link to the case study page. Alternately, we may add an icon to these if it's appropriate.
+
+1. WaterReporter iOS and Android
+2. FracTracker iOS and Android
