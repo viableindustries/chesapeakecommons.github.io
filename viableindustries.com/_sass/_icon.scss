@@ -3753,17 +3753,64 @@
 }
 
 .icon {
-  &.icon-blue {
+  display: inline-block;
+
+  &.icon-blue:before {
+    background-color: $color-white-bright;
     color: $color-blue-base;
   }
-  &.icon-blue-dark {
+  &.icon-blue.inverse:before {
+    background-color: $color-blue-base;      
+    color: $color-white-bright;
+  }
+  &.icon-blue-dark:before {
+    background-color: $color-white-bright;
     color: darken($color-blue-base, 15%);
   }
-  &.icon-gray {
+  &.icon-gray:before {
+    background-color: $color-white-bright;
     color: $color-black-base;
   }
-  &.icon-brand {
+  &.icon-brand:before {
+    background-color: $color-white-bright;
     color: darken($color-brand-base, 5%);
+  }
+  &.icon-brand.inverse:before {
+    background-color: $color-brand-base;      
+    color: $color-white-bright;
+  }
+
+  &.icon-xsmall {
+    &:before {
+      font-size: 8px;
+      top: -2px;
+      position: relative;
+      font-weight: bold !important;
+    }
+  }
+
+  &.icon-small:before {
+    font-size: 16px;
+  }
+
+  &.icon-medium:before {
+    font-size: 32px;
+  }
+
+  &.icon-large:before {
+    font-size: 64px;
+  }
+
+  &.icon-xlarge:before {
+    font-size: 128px;
+  }
+
+  &.icon-xxlarge:before {
+    font-size: 256px;
+  }
+
+  &.icon-pull-small:before {
+    margin-left: -8px;
   }
 }
 

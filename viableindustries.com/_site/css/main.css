@@ -558,7 +558,8 @@ h5,
 h6,
 p,
 li,
-address {
+address,
+blockquote {
   font-family: "Calluna", "Times New Roman", "Times", serif;
   color: #222222;
   line-height: 1.5;
@@ -630,7 +631,8 @@ h6.alt {
   line-height: 2.4; }
 
 p,
-address {
+address,
+blockquote {
   font-size: 1.25em;
   font-weight: 400;
   font-style: normal;
@@ -671,6 +673,11 @@ a:visited {
   transition: background-position .25s;
   -moz-transition: background-position .25s;
   -webkit-transition: background-position .25s; }
+  a img,
+  a:active img,
+  a:link img,
+  a:visited img {
+    background-image: none; }
   a.highlight,
   a:active.highlight,
   a:link.highlight,
@@ -827,20 +834,43 @@ figure {
   .page-content h5,
   .page-content h6,
   .page-content p,
+  .page-content blockquote,
   .post-content h1,
   .post-content h2,
   .post-content h3,
   .post-content h4,
   .post-content h5,
   .post-content h6,
-  .post-content p {
+  .post-content p,
+  .post-content blockquote {
     padding: 0 64px; }
+  .page-content blockquote,
+  .post-content blockquote {
+    border-left: 5px solid #e5e5e5;
+    font-style: italic;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    padding-left: 32px; }
   .page-content ol,
   .page-content ul,
   .post-content ol,
   .post-content ul {
     margin: 0 32px 32px;
     padding: 0 64px; }
+  .page-content article a,
+  .page-content article a:active,
+  .page-content article a:link,
+  .page-content article a:visited,
+  .post-content article a,
+  .post-content article a:active,
+  .post-content article a:link,
+  .post-content article a:visited {
+    background-image: none;
+    color: #06b9c7;
+    text-decoration: none; }
+  .page-content article a:hover,
+  .post-content article a:hover {
+    text-decoration: underline; }
 
 .site-title {
   display: inline-block;
@@ -898,9 +928,54 @@ figure {
     font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 0.875em;
     font-weight: 300; }
+.post-sidebar .links,
+.page-sidebar .links,
+.content-sidebar .links {
+  margin-top: 32px; }
+  .post-sidebar .links li,
+  .page-sidebar .links li,
+  .content-sidebar .links li {
+    border-bottom: 1px dashed #e5e5e5;
+    margin-bottom: 32px;
+    padding-bottom: 32px; }
+    .post-sidebar .links li .link-title,
+    .page-sidebar .links li .link-title,
+    .content-sidebar .links li .link-title {
+      display: block;
+      margin: 4px 0 8px; }
+    .post-sidebar .links li .link-url,
+    .page-sidebar .links li .link-url,
+    .content-sidebar .links li .link-url {
+      display: block; }
+.post-sidebar .statistic,
+.page-sidebar .statistic,
+.content-sidebar .statistic {
+  text-align: center; }
+  .post-sidebar .statistic .statistic-label,
+  .page-sidebar .statistic .statistic-label,
+  .content-sidebar .statistic .statistic-label {
+    display: block;
+    font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: 300; }
+  .post-sidebar .statistic .statistic-value,
+  .page-sidebar .statistic .statistic-value,
+  .content-sidebar .statistic .statistic-value {
+    color: #AAA;
+    display: block;
+    font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1.125;
+    text-shadow: 2px 2px 0 #F0FD37; }
+    .post-sidebar .statistic .statistic-value.statistic-large,
+    .page-sidebar .statistic .statistic-value.statistic-large,
+    .content-sidebar .statistic .statistic-value.statistic-large {
+      font-size: 10em;
+      line-height: 1; }
 
 .post-author {
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
   margin: 32px 48px;
   padding: 32px 16px; }
   .post-author .author-image {
@@ -4811,14 +4886,43 @@ img {
     font-size: 48px;
     line-height: 1.0; }
 
-.icon.icon-blue {
-  color: #3aebf9; }
-.icon.icon-blue-dark {
-  color: #07d0e0; }
-.icon.icon-gray {
-  color: #222222; }
-.icon.icon-brand {
-  color: #eefd1e; }
+.icon {
+  display: inline-block; }
+  .icon.icon-blue:before {
+    background-color: #fcfcfc;
+    color: #3aebf9; }
+  .icon.icon-blue.inverse:before {
+    background-color: #3aebf9;
+    color: #fcfcfc; }
+  .icon.icon-blue-dark:before {
+    background-color: #fcfcfc;
+    color: #07d0e0; }
+  .icon.icon-gray:before {
+    background-color: #fcfcfc;
+    color: #222222; }
+  .icon.icon-brand:before {
+    background-color: #fcfcfc;
+    color: #eefd1e; }
+  .icon.icon-brand.inverse:before {
+    background-color: #f0fd37;
+    color: #fcfcfc; }
+  .icon.icon-xsmall:before {
+    font-size: 8px;
+    top: -2px;
+    position: relative;
+    font-weight: bold !important; }
+  .icon.icon-small:before {
+    font-size: 16px; }
+  .icon.icon-medium:before {
+    font-size: 32px; }
+  .icon.icon-large:before {
+    font-size: 64px; }
+  .icon.icon-xlarge:before {
+    font-size: 128px; }
+  .icon.icon-xxlarge:before {
+    font-size: 256px; }
+  .icon.icon-pull-small:before {
+    margin-left: -8px; }
 
 p .icon {
   font-size: 16px;

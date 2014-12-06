@@ -85,14 +85,38 @@
     h4,
     h5,
     h6,
-    p {
+    p,
+    blockquote {
       padding: 0 64px;
+    }
+
+    blockquote {
+      border-left: 5px solid darken($color-white-base, 5%);
+      font-style: italic;
+      margin-bottom: 32px;
+      margin-left: 32px;
+      padding-left: 32px;
     }
 
     ol,
     ul {
       margin: 0 32px 32px;
       padding: 0 64px;
+    }
+
+    article {
+      a,
+      a:active,
+      a:link,
+      a:visited {
+        background-image: none;
+        color: darken($color-blue-base, 20%);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -143,10 +167,55 @@
 
   }
 
+  .links {
+    margin-top: 32px;
+
+    li {
+      border-bottom: 1px dashed darken($color-white-base, 5%);
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+
+      .link-title {
+        display: block;
+        margin: 4px 0 8px;
+      }
+
+      .link-url {
+        display: block;
+      }
+    }
+  }
+
+  .statistic {
+    text-align: center;
+
+    .statistic-label {
+      display: block;
+      font-family: $font-sans;
+      font-size: 0.875em;
+      font-weight: 300;
+    }
+
+    .statistic-value {
+      color: #AAA;
+      display: block;
+      font-family: $font-sans;
+      font-size: 5em;
+      font-weight: 700;
+      line-height: 1.125;
+      text-shadow: 2px 2px 0 #F0FD37;
+
+      &.statistic-large {
+        font-size: 10em;
+        line-height: 1;
+      }
+    }
+  }
+
 }
 
 .post-author {
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid darken($color-white-base, 5%);
   margin: 32px 48px;
   padding: 32px 16px;
 
