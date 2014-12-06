@@ -17,7 +17,7 @@ layout: default
     {{ content }}
   </article>
 
-  {% if page.navigation.level == 1 %}
+  {% if page.navigation.level == 1 && !page.navigation.hide_children %}
   <aside class="page-sidebar">
     <h3>More on {{ page.section.text }}</h3>
     <ul>

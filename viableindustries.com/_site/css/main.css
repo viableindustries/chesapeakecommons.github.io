@@ -564,6 +564,16 @@ address {
   line-height: 1.5;
   letter-spacing: 0.025em; }
 
+h1.alt,
+h2.alt,
+h3.alt,
+h4.alt,
+h5.alt,
+h6.alt {
+  font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+
 h1 {
   font-size: 3.0em;
   font-weight: 100;
@@ -584,21 +594,11 @@ p.introduction {
   margin: 0 auto;
   text-align: center; }
 
-h2.sans {
-  font-family: "Calluna", "Times New Roman", "Times", serif;
-  font-weight: 700;
-  text-transform: uppercase; }
-
 h3 {
   font-family: "Calluna", "Times New Roman", "Times", serif;
   font-size: 1.625em;
   font-weight: 300;
   margin: 0 0 16px; }
-
-h3.alt {
-  font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 1.625em;
-  text-transform: uppercase; }
 
 h4 {
   font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -608,6 +608,9 @@ h4 {
   margin: 32px 0 8px;
   text-transform: uppercase; }
 
+h4.alt {
+  line-height: 2; }
+
 h5 {
   font-size: 0.875em;
   font-weight: 500;
@@ -615,7 +618,7 @@ h5 {
   margin: 0 0 16px; }
 
 h5.alt {
-  font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  line-height: 2; }
 
 h6 {
   font-size: 0.75em;
@@ -624,7 +627,7 @@ h6 {
   margin: 0 0 16px; }
 
 h6.alt {
-  font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  line-height: 2.4; }
 
 p,
 address {
@@ -640,11 +643,11 @@ em {
 
 ul {
   list-style-type: square;
-  margin: 0 32px 32px;
+  margin: 0 0 32px;
   max-width: 60.94em; }
 
 ol {
-  margin: 0 32px 32px;
+  margin: 0 0 32px;
   max-width: 60.94em; }
 
 li {
@@ -824,17 +827,19 @@ figure {
   .page-content h5,
   .page-content h6,
   .page-content p,
-  .page-content ul,
-  .page-content ol,
   .post-content h1,
   .post-content h2,
   .post-content h3,
   .post-content h4,
   .post-content h5,
   .post-content h6,
-  .post-content p,
-  .post-content ul,
-  .post-content ol {
+  .post-content p {
+    padding: 0 64px; }
+  .page-content ol,
+  .page-content ul,
+  .post-content ol,
+  .post-content ul {
+    margin: 0 32px 32px;
     padding: 0 64px; }
 
 .site-title {
@@ -849,8 +854,50 @@ figure {
     min-width: 11.25em;
     width: 11.25em; }
 
-.post-sidebar {
-  text-align: center; }
+.post-sidebar h1,
+.post-sidebar h2,
+.post-sidebar h3,
+.post-sidebar h4,
+.post-sidebar h5,
+.post-sidebar h6,
+.post-sidebar p,
+.post-sidebar li,
+.page-sidebar h1,
+.page-sidebar h2,
+.page-sidebar h3,
+.page-sidebar h4,
+.page-sidebar h5,
+.page-sidebar h6,
+.page-sidebar p,
+.page-sidebar li,
+.content-sidebar h1,
+.content-sidebar h2,
+.content-sidebar h3,
+.content-sidebar h4,
+.content-sidebar h5,
+.content-sidebar h6,
+.content-sidebar p,
+.content-sidebar li {
+  padding-left: 0; }
+.post-sidebar ol,
+.post-sidebar ul,
+.page-sidebar ol,
+.page-sidebar ul,
+.content-sidebar ol,
+.content-sidebar ul {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0; }
+  .post-sidebar ol li,
+  .post-sidebar ul li,
+  .page-sidebar ol li,
+  .page-sidebar ul li,
+  .content-sidebar ol li,
+  .content-sidebar ul li {
+    list-style-type: none;
+    font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: 300; }
 
 .post-author {
   border-top: 1px solid #E5E5E5;

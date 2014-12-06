@@ -85,9 +85,13 @@
     h4,
     h5,
     h6,
-    p,
-    ul,
-    ol {
+    p {
+      padding: 0 64px;
+    }
+
+    ol,
+    ul {
+      margin: 0 32px 32px;
       padding: 0 64px;
     }
   }
@@ -109,8 +113,36 @@
   }
 }
 
-.post-sidebar {
-  text-align: center;
+.post-sidebar,
+.page-sidebar,
+.content-sidebar {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    padding-left: 0;
+  }
+
+  ol,
+  ul {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+
+    li {
+      list-style-type: none;
+      font-family: $font-sans;
+      font-size: 0.875em;
+      font-weight: 300;
+    }
+
+  }
+
 }
 
 .post-author {
