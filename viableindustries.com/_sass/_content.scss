@@ -37,6 +37,20 @@
   position: relative;
   top: 0;
   width: 70%;
+
+  &.site-content-hero {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto 342px;
+
+    .page-header {
+      padding: 64px 64px 128px;
+    }
+
+    .page-content {
+      margin-top: 64px;
+    }
+  }
 }
 
   .page-header,
@@ -53,6 +67,27 @@
       padding: 16px;
 
       width: 100%;
+      
+      &.alt {
+        color: $color-white-bright;
+        font-family: $font-sans;
+        font-size: 4em;
+        font-weight: 600;
+        margin: 0;
+        padding: 64px 0;
+        text-transform: uppercase;
+      }
+
+      &.page-hero-alt {
+        border-color: rgba($color-white-bright, 0.9);
+        color: rgba($color-white-bright, 0.9);
+        font-family: $font-sans;
+        font-size: 4em;
+        font-weight: 600;
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+        word-spacing: 0.25em;
+      }
     }
 
     h2 {
@@ -72,12 +107,23 @@
         background-color: transparent;
         background-image: none;
       }
+
+      &.page-hero-alt {
+        color: rgba($color-white-bright, 0.9);
+
+        a,
+        a:link,
+        a:visited {
+          color: rgba($color-white-bright, 0.9);
+        }
+      }
     }
   }
 
   .page-content,
   .post-content {
     display: block;
+    margin-top: 32px;
 
     h1,
     h2,
@@ -140,6 +186,9 @@
 .post-sidebar,
 .page-sidebar,
 .content-sidebar {
+  border-left: 1px solid darken($color-white-base, 5%);
+  padding-left: 64px;
+  margin-left: -64px;
 
   h1,
   h2,
@@ -305,6 +354,10 @@
 //
 img {
   max-width: 100%;
+
+  &.img-respond {
+    width: 100%;
+  }
 }
 
 

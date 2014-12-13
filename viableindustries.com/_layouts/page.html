@@ -5,7 +5,11 @@ layout: default
   <div class="column-16">
 
   <header class="page-header">
+    {% if page.hero.src %}
+    <h2 class="page-hero-alt">
+    {% else %}
     <h2>
+    {% endif %}
       <a href="{{ page.section.url }}" title="{{ page.title }} is part of the {{ page.section.text }} section">
         {{ page.section.text }}
       </a>
@@ -16,7 +20,11 @@ layout: default
       </a>
       {% endif %}
     </h2>
+    {% if page.hero.src %}
+    <h1 class="page-title page-hero-alt">{{ page.title }}</h1>
+    {% else %}
     <h1 class="page-title">{{ page.title }}</h1>
+    {% endif %}
   </header>
 
   <article class="page-content">

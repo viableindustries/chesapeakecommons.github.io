@@ -12,12 +12,11 @@ navigation:
 order: 3
 ---
 
-Enterprise
-
-Mobile
-
-Consumer
-
-Data
-
-Science
+- Natural Resources (e.g., WaterReporter, ConservationTracker, HarborAlert)
+- Community Outreach [?] (e.g., Stormwater Guide, Clean Water Communities)
+- Energy (e.g., FracTracker)
+- Government (e.g., NFWF)
+- Education (e.g., Snapology)
+- Finance (e.g., FPW Grants)
+- Law (e.g., Ashtracker)
+- Music (e.g., JazzCommons)

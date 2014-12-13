@@ -1,5 +1,5 @@
 ---
-permalink: "/case-studies/water-reporter/awards/"
+permalink: "/case-studies/water-reporter/press/"
 layout: page
 title:  "2013 Technology Impact Award Winner"
 section: 
@@ -15,7 +15,7 @@ navigation:
 order: 2
 ---
 <figure>
-  <img src="/images/case-studies-water-reporter-awards-501ctech-award-acceptence.jpg" alt="Acceptance of the 2013 Technology Award given by 501cTech" />
+  <img class="img-respond" src="/images/case-studies-water-reporter-awards-501ctech-award-acceptence.jpg" alt="Acceptance of the 2013 Technology Award given by 501cTech" />
   <figcaption>Photo by <a href="http://www.501ctech.org/" target="_blank">501cTech</a></figcaption>
 </figure>
 

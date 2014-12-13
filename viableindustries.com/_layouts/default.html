@@ -39,8 +39,12 @@
 
     {% include header.html %}
 
+    {% if page.hero.src %}
+    <main class="site-content site-content-hero" style="background-image: url({{ page.hero.src }})">
+    {% else %}
     <main class="site-content">
-        {{ content }}
+    {% endif %}
+      {{ content }}
     </main>
 
     {% include footer.html %}

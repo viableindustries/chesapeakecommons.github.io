@@ -20,12 +20,12 @@ order: 2
 </p>
 
 <figure>
-  <img src="/images/case-studies-water-reporter-back-story-turbid-water.jpg" alt="" />
+  <img class="img-respond" src="/images/case-studies-water-reporter-back-story-turbid-water.jpg" alt="" />
   <figcaption>Pollution Report by <a rel="nofollow" href="http://www.waterreporter.org/community/114z22e17c18k32s/brent-walls" target="_blank">Brent Walls, Upper Potomac Riverkeeper</a> via <a rel="nofollow" href="http://www.waterreporter.org/reports/1185" target="_blank">WaterReporter</a></figcaption>
 </figure>
 
 <div class="row">
-  <article class="column-12">
+  <article class="column-16">
     <p>
       Potomac Riverkeeper, one the many organizations focused on Bay restoration through citizen engagement and advocacy, needed a <a href="/expertise/data-collection/#crowd-sourced-data-collection" title="Learn how we can help your organization crowd source data quickly and effiently through mulit-platform">quick and efficient way to crowd source data on pollution hotspots and recreation activities</a> throughout the watershed. These citizen reports allow PRK to be the eyes and the ears of the watershed and help to remediate pollution areas based on citizen aggregated data. Except for maybe a stray phone call or an email, the Riverkeepers had no way to collect this information from citizens or keep track of it themselves.
     </p>
@@ -33,30 +33,12 @@ order: 2
     <p>
       We filled this technological void with a mobile app. In March we planned the Water Reporter for iOS, to address the Riverkeepers need for location specific reports with citizen contributed photography and video.
     </p>
-
-    <p>
-      We walked the group through an <a href="" title="We follow an iterative design and prototyping process for building all of our applications">iterative design and prototyping process</a>, breaking the project down into a three short cycles. Each iteration of the app would be loaded onto the Riverkeepers iPhones and iPads. We took a hands on approach with beta testing, allowing them to <a href="/expertise/data-collection/#field-data-entry" title="Field data collection is key to an efficient data workflow">use the app in the field to collect data</a>, test the interface, and ensure that the workflow matched the end needs of the user.
-    </p>
     <br />
   </article>
-  <aside class="column-4 content-sidebar">
-    <ul class="links align-center">
-      <li class="statistic">
-        <span class="statistic-label">Covering</span>
-        <span class="statistic-value">65k</span>
-        <span class="statistic-label">sq mi</span>
-      </li>
-      <li class="statistic">
-        <span class="statistic-label">Approximately</span>
-        <span class="statistic-value">7M</span>
-        <span class="statistic-label">current residents</span>
-      </li>
-    </ul>
-  </aside>
 </div>
 
 <figure>
-  <img src="/images/case-studies-water-reporter-back-story-activity-report.jpg" alt="" />
+  <img class="img-respond" src="/images/case-studies-water-reporter-back-story-activity-report.jpg" alt="" />
   <figcaption>Activity Report by <a rel="nofollow" href="http://www.waterreporter.org/community/26r105n32r12x113n18e21b9z/nathaniel-morrison" target="_blank">Nathaniel Morrison</a> via <a rel="nofollow" href="http://www.waterreporter.org/reports/1126" target="_blank">WaterReporter</a></figcaption>
 </figure>
 
@@ -64,21 +46,11 @@ order: 2
   <article class="column-12">
 
     <p>
+      We walked the group through an <a href="" title="We follow an iterative design and prototyping process for building all of our applications">iterative design and prototyping process</a>, breaking the project down into a three short cycles. Each iteration of the app would be loaded onto the Riverkeepers iPhones and iPads. We took a hands on approach with beta testing, allowing them to <a href="/expertise/data-collection/#field-data-entry" title="Field data collection is key to an efficient data workflow">use the app in the field to collect data</a>, test the interface, and ensure that the workflow matched the end needs of the user.
+    </p>
+
+    <p>
       After a few short cycles of design, development, and user-focused improvements, we've released the first version of the Water Reporter app to the iTunes Store.
-    </p>
-
-    <p>
-      We are excited because this app will have impact in two ways:
-    </p>
-
-    <h4 class="alt">Access</h4>
-    <p>
-      We can use citizen-submitted data to get a better understanding of how the public is using the river and where.
-    </p>
-
-    <h4 class="alt">Stewardship</h4>
-    <p>
-      We can use information that citizens collect on areas of concern to help identify areas in need of local restoration.
     </p>
 
   </article>
