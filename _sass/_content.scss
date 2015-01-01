@@ -7,6 +7,54 @@
 // @see (1) http://sass-lang.com/documentation/file.SASS_REFERENCE.html
 //
 
+.dark {
+  .page-header {
+    background-color: rgba($color-black-base, 0.75);
+    padding: 64px;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: rgba(252,252,252,0.75);
+
+      a,
+      a:active,
+      a:link,
+      a:hover,
+      a:visited {
+        color: rgba(252,252,252,0.75);
+      }
+    }
+
+    h1 {
+      border-top: 1px solid rgba($color-white-base, 0.25);
+      color: rgba(252,252,252,0.95);
+      padding-bottom: 0;
+    }
+
+    p {
+      color: rgba(252,252,252,0.95);
+    }
+
+    p {
+      font-family: $font-sans;
+    }
+  }
+  
+  .page-content {
+    background-color: $color-white-bright;
+    margin-top: 0;
+    padding: 64px 0;
+  }
+
+  .site-content {
+    background-color: transparent;
+    padding: 32px 0 0;
+  }
+}
+
 //
 // Site Header
 //
@@ -324,6 +372,26 @@
 //
 // Site Copyright
 //
+.dark {
+  .site-copyright {
+    background-color: rgba($color-black-base, 0.75);
+    
+    p {
+      color: rgba($color-white-bright, 0.25);
+
+      a,
+      a:active,
+      a:link,
+      a:hover,
+      a:visited {
+        background-image: none;
+        color: rgba($color-white-bright, 0.25);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .site-copyright {
   background-color: rgba(248, 248, 248, 0.75);
   float: left;

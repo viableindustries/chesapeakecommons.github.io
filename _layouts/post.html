@@ -1,10 +1,8 @@
 ---
 layout: default
 ---
-<div class="row">
-  <div class="column-16">
 
-  <header class="post-header">
+  <header class="page-header">
     <h2>
       <a href="{{ page.section.url }}" title="{{ page.title }} is part of the {{ page.section.text }} section">
         {{ page.section.text }}
@@ -14,11 +12,11 @@ layout: default
     <h6 class="alt post-published">Published on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %}{% endif %}</h6>
   </header>
 
-  <article class="post-content">
+  <article class="page-content">
     {{ content }}
   </article>
 
-  <aside class="post-author">
+  <aside class="page-author">
     <div class="row">
       <div class="column-3">
         <img class="author-image" src="{{ page.author.img }}" width="128" alt="{{ page.author.bio }}" />
@@ -30,6 +28,3 @@ layout: default
       </div>
     </div>
   </aside>
-
-  </div>
-</div>

@@ -31,12 +31,13 @@
       a:active,
       a:link,
       a:visited {
-        background-image: linear-gradient(to right, transparent 50%, $color-brand-base 50%);
+        background-image: linear-gradient(to right, transparent 50%, rgba($color-brand-base, 0.25) 50%);
         background-size: 200% 100%;
         color: $color-white-base;
         display: inline-block;
         line-height: 1;
-        padding: 8px 32px 4px 8px;
+        margin-top: 6px;
+        padding: 4px 32px 4px 8px;
         position:relative;
         text-decoration: none;
         transition: background-position .5s;
@@ -52,7 +53,6 @@
 
       a:hover {
         background-position: -100% 0;
-        color: $color-black-base;
         text-decoration: none;
       }
 
