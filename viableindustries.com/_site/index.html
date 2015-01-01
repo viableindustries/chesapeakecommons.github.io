@@ -23,19 +23,13 @@
     <title>Viable Industries | Cause-Driven Digital Creative Studio | East Liberty, Pittsburgh, PA</title>
 
     <link rel="stylesheet" href="/css/main.css">
-
-    <script type="text/javascript" src="//use.typekit.net/eks4tss.js"></script>
-    <script type="text/javascript">
-      try {
-        Typekit.load();
-      }catch(e){
-        console.error('Could not load Typekit');
-      }
-    </script>
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css" />
 
   </head>
 
   <body class="">
+
+    <div id="map" class="index-map"></div>
 
     <header class="site-header">
 
@@ -57,6 +51,8 @@
                 <a class="page-link inactive" href="/expertise/">Expertise</a>
               </li>
             
+          
+        
           
         
           
@@ -89,6 +85,8 @@
                 <a class="page-link inactive" href="/industries/">Industries</a>
               </li>
             
+          
+        
           
         
           
@@ -164,55 +162,25 @@
   <div class="column-16">
 
   <header class="page-header">
-    <h2>Purpose-Driven Digital Creative Studio</h2>
+    <h2>Value-Driven Digital Creative Studio</h2>
     <h1 class="page-title">
-      We believe information transparency is the foundation
-      for effective public engagement, thoughtful decision
-      making, and meaningful social change.
+      Transparency is the foundation for
+      effective public engagement,
+      thoughtful decision making,
+      and meaningful social change.
     </h1>
   </header>
 
   <article class="page-content">
 
-    - Foudational Statement
+    <p>
+      We help humans collect useful data, understand their data, and share it with others.
+    </p>
 
-    Information transparency is the foundation for ...
-                                                       ... effective public engagement
-                                                       ... thoughful decision making
-                                                       ... meaningful social change
-
-    - What We Do
-
-    We help people/humans ...
-                                  ... collect useful data
-                                  ... organize their data
-                                  ... understand and share their data
-
-    - Why We Do It
-
-    So they can ...
-                        ... "help students better understand science and technology through creative play"
-                        ... "dedicate more time in the field, stewarding our natural resources"
-                        ... "focus on their cause, effecting meaningful social change"
-                        ... "share authentic stories, engaging the public"
-
-    - End Result
-
-    Because of the things we create
-
-    ... web and mobile applications
-    ... software
-    ... editorial content
-    ... data infrastructure
-
-
-    <h4 class="alt">What we do</h4>
-    <ol>
-      <li>We build tools to help organizations collect data (iPhone, Android, Tablet, Desktop, Spreadsheet, PDF, DOC)</li>
-      <li>We design, develop, and support data management systems that host and distribute your data (code, servers, transmission lines, computer chips)</li>
-      <li>We create visualizations and platforms to display that data (phone, tablet, website, PDF, spreadsheet)</li>
-    </ol>
-
+    <p>
+      So they can help students better understand science and technology through creative play, dedicate more time in the field stewarding our natural resources, focus on their cause effecting meaningful social change, and share more authentic stories, engaging the public and sharing knowledge.
+    </p>
+    
   </article>
 
   </div>
@@ -271,13 +239,35 @@
       </p>
     </div>
     <div class="column-8">
-      <p class="align-right page-last-updated" itemprop="datePublished" content="2014-12-17T17:37:02-05:00">
-        <em>Last updated December 17, 2014</em>
+      <p class="align-right page-last-updated" itemprop="datePublished" content="2015-01-01T09:38:48-05:00">
+        <em>Last updated January 1, 2015</em>
       </p>
     </div>
   </div>
 </footer>
     
+    <script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js"></script>
+    <script>
+      // Provide your access token
+      L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2ZWxvcGVkc2ltcGxlIiwiYSI6IkFWaGZPVUEifQ.JuZ21Q5vqECOkOwdCgIl6g';
+      // Create a map in the div #map
+      var map = L.mapbox.map('map', 'developedsimple.kkm7een1', {
+        zoomControl: false,
+        infoControl: false
+      });
+      
+      map.scrollWheelZoom.disable();
+    </script>
+
+    <script type="text/javascript" src="//use.typekit.net/eks4tss.js"></script>
+    <script type="text/javascript">
+      try {
+        Typekit.load();
+      }catch(e){
+        console.error('Could not load Typekit');
+      }
+    </script>
+
     <script type="text/javascript">
 
       var _gaq = _gaq || [];

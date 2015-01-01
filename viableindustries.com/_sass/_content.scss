@@ -285,7 +285,7 @@
   float: left;
   left: 25%;
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 0;
   margin-left: 0.625%;
   margin-right: 0.625%;
   max-width: 2048px;
@@ -325,12 +325,13 @@
 // Site Copyright
 //
 .site-copyright {
+  background-color: rgba(248, 248, 248, 0.75);
   float: left;
   left: 25%;
   margin-bottom: 64px;
   margin-left: 0.625%;
   margin-right: 0.625%;
-  padding: 0 64px;
+  padding: 32px 64px 32px;
   position: relative;
   max-width: 2048px;
   width: 70%;
@@ -342,9 +343,9 @@
   }
 
   .page-last-updated {
-    color: rgb(196,196,196);
+    color: rgba($color-black-base, 0.75);
     letter-spacing: 0.0125em;
-    font-size: 0.875em;
+    font-size: 0.675em;
   }
 }
 

@@ -1,0 +1,5 @@
+---
+layout: null
+---
+{% for page in site.pages %}{{ page.strategy.audit }},{{ page.title }},{{ page.url }}
+{% endfor %}

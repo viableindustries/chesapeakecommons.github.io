@@ -757,7 +757,7 @@ figure {
     .navigation-primary ul li a:visited {
       background-image: linear-gradient(to right, transparent 50%, #f0fd37 50%);
       background-size: 200% 100%;
-      color: #222222;
+      color: #f2f2f2;
       display: inline-block;
       line-height: 1;
       padding: 8px 32px 4px 8px;
@@ -775,6 +775,7 @@ figure {
         text-decoration: none; }
     .navigation-primary ul li a:hover {
       background-position: -100% 0;
+      color: #222222;
       text-decoration: none; }
 
 .site-header {
@@ -1036,7 +1037,7 @@ figure {
   float: left;
   left: 25%;
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 0;
   margin-left: 0.625%;
   margin-right: 0.625%;
   max-width: 2048px;
@@ -1063,12 +1064,13 @@ figure {
     margin-bottom: 0; }
 
 .site-copyright {
+  background-color: rgba(248, 248, 248, 0.75);
   float: left;
   left: 25%;
   margin-bottom: 64px;
   margin-left: 0.625%;
   margin-right: 0.625%;
-  padding: 0 64px;
+  padding: 32px 64px 32px;
   position: relative;
   max-width: 2048px;
   width: 70%; }
@@ -1077,9 +1079,9 @@ figure {
     font-size: 0.75em;
     font-weight: 300; }
   .site-copyright .page-last-updated {
-    color: #c4c4c4;
+    color: rgba(34, 34, 34, 0.75);
     letter-spacing: 0.0125em;
-    font-size: 0.875em; }
+    font-size: 0.675em; }
 
 img {
   max-width: 100%; }
@@ -4985,6 +4987,16 @@ a .icon {
   font-size: 80%;
   position: relative;
   top: 2px; }
+
+.index-map {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.leaflet-control-attribution {
+  display: none; }
 
 .form-geocoder .address {
   position: relative; }

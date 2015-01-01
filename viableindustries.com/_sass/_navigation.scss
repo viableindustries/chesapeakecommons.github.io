@@ -33,7 +33,7 @@
       a:visited {
         background-image: linear-gradient(to right, transparent 50%, $color-brand-base 50%);
         background-size: 200% 100%;
-        color: $color-black-base;
+        color: $color-white-base;
         display: inline-block;
         line-height: 1;
         padding: 8px 32px 4px 8px;
@@ -52,6 +52,7 @@
 
       a:hover {
         background-position: -100% 0;
+        color: $color-black-base;
         text-decoration: none;
       }
 

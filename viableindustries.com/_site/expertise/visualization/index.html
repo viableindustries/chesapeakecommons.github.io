@@ -23,19 +23,13 @@
     <title>Dynamic, Real-Time Data Visualization</title>
 
     <link rel="stylesheet" href="/css/main.css">
-
-    <script type="text/javascript" src="//use.typekit.net/eks4tss.js"></script>
-    <script type="text/javascript">
-      try {
-        Typekit.load();
-      }catch(e){
-        console.error('Could not load Typekit');
-      }
-    </script>
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css" />
 
   </head>
 
   <body class="">
+
+    <div id="map" class="index-map"></div>
 
     <header class="site-header">
 
@@ -57,6 +51,8 @@
                 <a class="page-link inactive" href="/expertise/">Expertise</a>
               </li>
             
+          
+        
           
         
           
@@ -89,6 +85,8 @@
                 <a class="page-link inactive" href="/industries/">Industries</a>
               </li>
             
+          
+        
           
         
           
@@ -293,6 +291,28 @@ Platform agnostic</p>
   </div>
 </footer>
     
+    <script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js"></script>
+    <script>
+      // Provide your access token
+      L.mapbox.accessToken = 'pk.eyJ1IjoiZGV2ZWxvcGVkc2ltcGxlIiwiYSI6IkFWaGZPVUEifQ.JuZ21Q5vqECOkOwdCgIl6g';
+      // Create a map in the div #map
+      var map = L.mapbox.map('map', 'developedsimple.kkm7een1', {
+        zoomControl: false,
+        infoControl: false
+      });
+      
+      map.scrollWheelZoom.disable();
+    </script>
+
+    <script type="text/javascript" src="//use.typekit.net/eks4tss.js"></script>
+    <script type="text/javascript">
+      try {
+        Typekit.load();
+      }catch(e){
+        console.error('Could not load Typekit');
+      }
+    </script>
+
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
