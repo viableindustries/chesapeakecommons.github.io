@@ -5,6 +5,10 @@
 // specifications.
 //
 
+
+//
+// Sitewide Map Styles
+//
 .index-map {
   height: 100%;
   left: 0;
@@ -13,12 +17,14 @@
   width: 100%;
 }
 
+
 //
 // Mapbox.JS Overrides
 //
 .leaflet-control-attribution {
   display: none;
 }
+
 
 //
 // Geocoder Dropdown
