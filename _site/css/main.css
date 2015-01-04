@@ -971,8 +971,8 @@ figure {
     text-decoration: underline; }
 
 .content-features .content-feature .content-feature-icon .icon {
-  border-radius: 50%;
-  border: 2px solid;
+  border-radius: 47%;
+  border: 2px dotted;
   box-shadow: 0 0 6px #f0fd37;
   font-size: 3em;
   height: 100px;
