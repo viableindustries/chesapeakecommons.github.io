@@ -755,9 +755,9 @@ figure {
     .navigation-primary ul li a:active,
     .navigation-primary ul li a:link,
     .navigation-primary ul li a:visited {
-      background-image: linear-gradient(to right, transparent 50%, rgba(240, 253, 55, 0.25) 50%);
+      background-image: linear-gradient(to right, transparent 50%, #f0fd37 50%);
       background-size: 200% 100%;
-      color: #f2f2f2;
+      color: #222222;
       display: inline-block;
       line-height: 1;
       margin-top: 6px;
@@ -823,8 +823,10 @@ figure {
     font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
 .dark .page-content {
   background-color: #fcfcfc;
+  float: left;
   margin-top: 0;
-  padding: 64px 0; }
+  padding: 64px 0;
+  width: 100%; }
 .dark .site-content {
   background-color: transparent;
   padding: 32px 0 0; }
@@ -967,6 +969,23 @@ figure {
   .page-content article a:hover,
   .post-content article a:hover {
     text-decoration: underline; }
+
+.content-features .content-feature .content-feature-icon .icon {
+  border-radius: 50%;
+  border: 2px solid;
+  box-shadow: 0 0 6px #f0fd37;
+  font-size: 3em;
+  height: 100px;
+  padding: 23px 0 0;
+  width: 100px;
+  text-shadow: 0 0 6px #f0fd37; }
+.content-features .content-feature h4 {
+  padding: 0; }
+.content-features .content-feature p {
+  font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0; }
 
 .site-title {
   display: inline-block;

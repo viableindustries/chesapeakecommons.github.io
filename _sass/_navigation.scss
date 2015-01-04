@@ -31,9 +31,9 @@
       a:active,
       a:link,
       a:visited {
-        background-image: linear-gradient(to right, transparent 50%, rgba($color-brand-base, 0.25) 50%);
+        background-image: linear-gradient(to right, transparent 50%, rgba($color-brand-base, 1) 50%);
         background-size: 200% 100%;
-        color: $color-white-base;
+        color: $color-black-base;
         display: inline-block;
         line-height: 1;
         margin-top: 6px;

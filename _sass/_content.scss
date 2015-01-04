@@ -45,8 +45,10 @@
   
   .page-content {
     background-color: $color-white-bright;
+    float: left;
     margin-top: 0;
     padding: 64px 0;
+    width: 100%;
   }
 
   .site-content {
@@ -212,6 +214,38 @@
         text-decoration: underline;
       }
     }
+  }
+
+  .content-features {
+
+    .content-feature {
+
+      .content-feature-icon {
+        .icon {
+          border-radius: 50%;
+          border: 2px solid;
+          box-shadow: 0 0 6px $color-brand-base;
+          font-size: 3em;
+          height: 100px;
+          padding: 23px 0 0;
+          width: 100px;
+          text-shadow: 0 0 6px $color-brand-base;
+        }
+      }
+
+      h4 {
+        padding: 0;
+      }
+
+      p {
+        font-family: $font-sans;
+        font-size: 1em;
+        font-weight: 300;
+        padding: 0;
+      }
+
+    }
+
   }
 
 .site-title {
