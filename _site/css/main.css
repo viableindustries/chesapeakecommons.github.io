@@ -779,7 +779,7 @@ figure {
       text-decoration: none; }
 
 .dark .page-header {
-  background-color: rgba(34, 34, 34, 0.75);
+  background-color: #222222;
   padding: 64px; }
   .dark .page-header h2,
   .dark .page-header h3,
@@ -964,7 +964,7 @@ figure {
   .post-content article a:link,
   .post-content article a:visited {
     background-image: none;
-    color: #06b9c7;
+    color: #199194;
     text-decoration: none; }
   .page-content article a:hover,
   .post-content article a:hover {
@@ -973,12 +973,12 @@ figure {
 .content-features .content-feature .content-feature-icon .icon {
   border-radius: 47%;
   border: 2px dotted;
-  box-shadow: 0 0 6px #f0fd37;
+  box-shadow: 0 0 6px #36d9dd;
   font-size: 3em;
   height: 100px;
   padding: 23px 0 0;
   width: 100px;
-  text-shadow: 0 0 6px #f0fd37; }
+  text-shadow: 0 0 6px #36d9dd; }
 .content-features .content-feature h4 {
   padding: 0; }
 .content-features .content-feature p {
@@ -1133,19 +1133,6 @@ figure {
     font-weight: 300;
     margin-bottom: 0; }
 
-.dark .site-copyright {
-  background-color: rgba(34, 34, 34, 0.75); }
-  .dark .site-copyright p {
-    color: rgba(252, 252, 252, 0.25); }
-    .dark .site-copyright p a,
-    .dark .site-copyright p a:active,
-    .dark .site-copyright p a:link,
-    .dark .site-copyright p a:hover,
-    .dark .site-copyright p a:visited {
-      background-image: none;
-      color: rgba(252, 252, 252, 0.25);
-      text-decoration: underline; }
-
 .site-copyright {
   background-color: rgba(248, 248, 248, 0.75);
   float: left;
@@ -1248,7 +1235,7 @@ img {
 .article-container.article-viable-container .article a {
   text-align: center; }
 .article-container.article-viable-container .article .article-title {
-  background-color: rgba(58, 235, 249, 0.5);
+  background-color: rgba(54, 217, 221, 0.5);
   display: inline-block;
   padding-left: 4px;
   padding-right: 4px;
@@ -1277,7 +1264,7 @@ img {
   bottom: 16px;
   left: 16px; }
 .article-container.article-viable-container .article:hover .article-title {
-  background-color: rgba(58, 235, 249, 0.75); }
+  background-color: rgba(54, 217, 221, 0.75); }
 .article-container.article-viable-container .article:hover .background-overlay {
   background-color: rgba(242, 242, 242, 0.7); }
 .article-container.article-viable-container .article:hover .background-image {
@@ -4996,7 +4983,7 @@ img {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
   */
-  color: #3aebf9;
+  color: #36d9dd;
   padding: 6px 12px;
   font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: 100;
@@ -5011,7 +4998,7 @@ img {
   .icon-button:active:hover,
   .icon-button:link:hover,
   .icon-button:visited:hover {
-    background-color: #3aebf9;
+    background-color: #36d9dd;
     color: white;
     text-decoration: none; }
 
@@ -5027,13 +5014,13 @@ img {
   display: inline-block; }
   .icon.icon-blue:before {
     background-color: #fcfcfc;
-    color: #3aebf9; }
+    color: #36d9dd; }
   .icon.icon-blue.inverse:before {
-    background-color: #3aebf9;
+    background-color: #36d9dd;
     color: #fcfcfc; }
   .icon.icon-blue-dark:before {
     background-color: #fcfcfc;
-    color: #07d0e0; }
+    color: #1da6aa; }
   .icon.icon-gray:before {
     background-color: #fcfcfc;
     color: #222222; }
@@ -5171,7 +5158,7 @@ a .icon {
       .legend .legend-list li .legend-item-symbol.legend-item-symbol-polygon {
         background-image: url("//api.tiles.mapbox.com/v4/developedsimple.k105bd34/-77.8714370727539,39.3727911029975,17/40x40@2x.png?access_token=pk.eyJ1IjoiZGV2ZWxvcGVkc2ltcGxlIiwiYSI6IlZGVXhnM3MifQ.Q4wmA49ggy9i1rLr8-Mc-w"); }
       .legend .legend-list li .legend-item-symbol.legend-item-symbol-land-river-segment {
-        background-color: #3aebf9; }
+        background-color: #36d9dd; }
     .legend .legend-list li .legend-item-label {
       display: table-cell;
       margin-bottom: 8px;

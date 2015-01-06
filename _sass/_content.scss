@@ -9,7 +9,7 @@
 
 .dark {
   .page-header {
-    background-color: rgba($color-black-base, 0.75);
+    background-color: $color-black-base;
     padding: 64px;
 
     h2,
@@ -224,12 +224,12 @@
         .icon {
           border-radius: 47%;
           border: 2px dotted;
-          box-shadow: 0 0 6px $color-brand-base;
+          box-shadow: 0 0 6px $color-blue-base;
           font-size: 3em;
           height: 100px;
           padding: 23px 0 0;
           width: 100px;
-          text-shadow: 0 0 6px $color-brand-base;
+          text-shadow: 0 0 6px $color-blue-base;
         }
       }
 
@@ -406,26 +406,6 @@
 //
 // Site Copyright
 //
-.dark {
-  .site-copyright {
-    background-color: rgba($color-black-base, 0.75);
-    
-    p {
-      color: rgba($color-white-bright, 0.25);
-
-      a,
-      a:active,
-      a:link,
-      a:hover,
-      a:visited {
-        background-image: none;
-        color: rgba($color-white-bright, 0.25);
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
 .site-copyright {
   background-color: rgba(248, 248, 248, 0.75);
   float: left;
