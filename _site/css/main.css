@@ -921,6 +921,8 @@ figure {
         font-size: 2.4em;
         padding: 64px 0;
         text-align: center; }
+      .widescreen .site-content .page-content.site-team {
+        margin-bottom: 64px; }
     .widescreen .site-content .content-features .content-feature .content-feature-icon .icon {
       border-radius: 0;
       border: 2px dashed #fcfcfc;
