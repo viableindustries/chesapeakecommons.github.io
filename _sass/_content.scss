@@ -57,6 +57,218 @@
   }
 }
 
+.widescreen {
+  background-color: $color-black-base;
+  margin: 0 auto;
+  max-width: 100%;
+
+  .site-header,
+  .site-purpose {
+    background-color: $color-brand-base;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    h1 {
+      border-top: 0;
+      color: $color-black-base;
+      font-size: 4em;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 1080px;
+      padding: 64px 0 128px;
+    }
+
+    h3 {
+      color: #222;
+      font-size: 3em;
+      letter-spacing: 0;
+      margin: 0 auto;
+      max-width: 1360px;
+      padding: 128px 0;
+      text-align: center;
+    }
+  }
+
+  .site-purpose {
+    margin-top: 128px;
+  }
+  
+  .site-title {
+    display: block;
+    margin: 0 auto;
+    padding: 64px 0;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      width: 21.25em;
+    }
+  }
+
+  .site-content {
+    background-color: transparent;
+    clear: left;
+    float: none;
+    height: 100%;
+    left: auto;
+    margin: 0 auto;
+    padding: 0;
+    top: auto;
+    max-width: 80em;
+    width: 100%;
+
+    .page-header {
+      height: 100%;
+      margin: 0;
+      padding: 128px 64px;
+      text-align: center;
+      width: 100%;
+
+      hr {
+        border: 0;
+        border-top: 1px solid rgba($color-white-bright, 0.05);
+      }
+      
+      h1 {
+        border-top: 0;
+        color: $color-white-base;
+        font-size: 4em;
+        text-align: center;
+        max-width: 1080px;
+      }
+      
+      h2 {
+        color: $color-white-base;
+        font-family: $font-sans;
+        font-size: 2.4em;
+        text-align: center;
+      }
+    }
+
+    .page-content {
+      margin: 0;
+      float: left;
+      width: 100%;
+
+      hr {
+        border: 0;
+        border-top: 1px solid rgba($color-white-bright, 0.05);
+      }
+      
+      h1 {
+        border-top: 0;
+        color: $color-white-base;
+        font-size: 4em;
+        text-align: center;
+        max-width: 1080px;
+      }
+      
+      h2 {
+        color: $color-white-base;
+        font-family: $font-sans;
+        font-size: 2.4em;
+        padding: 64px 0;
+        text-align: center;
+      }
+
+    }
+
+    .content-features {
+
+      .content-feature {
+
+        .content-feature-icon {
+          .icon {
+            border-radius: 0;
+            border: 2px dashed $color-white-bright;
+            box-shadow: none;
+            color: $color-white-base;
+            font-size: 3em;
+            height: 100px;
+            padding: 23px 0 0;
+            text-shadow: none;
+            width: 100px;
+          }
+        }
+
+        h4 {
+          color: $color-white-bright;
+          font-size: 1.25em;
+          padding: 0;
+        }
+
+        p {
+          color: $color-white-base;
+          font-family: $font-sans;
+          font-size: 1em;
+          font-weight: 300;
+          padding: 0;
+        }
+
+      }
+
+    }
+  }
+
+  .site-footer,
+  .site-copyright {
+    background-color: rgba($color-white-bright, 0.05);
+    left: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+
+    .row {
+      display: block;
+      float: none;
+      margin: 0 auto;
+      max-width: 1280px;
+      width: 100%;
+    }
+
+    h5,
+    p,
+    li,
+    address {
+      color: rgba($color-white-base, 0.75);
+      font-family: $font-sans;
+    }
+
+    p strong {
+      font-weight: 600;
+      font-size: 1.10em;
+    }
+
+    a,
+    a:active,
+    a:link,
+    a:hover,
+    a:visited {
+      background-image: none;
+      background-color: transparent;
+      color: rgba($color-brand-base, 0.9);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .site-copyright {
+    background-color: rgba($color-white-bright, 0.025);
+    padding: 64px;
+
+    p {
+      color: rgba($color-white-base, 0.25);
+      margin: 0 auto 16px;
+      max-width: 68.75em;
+    }
+  }
+}
+
 //
 // Site Header
 //
@@ -377,7 +589,7 @@
   h5 {
     font-family: $font-sans;
     font-size: 0.875em;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 8px;
     text-transform: uppercase;
   }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="{{ page.meta.description }}">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ page.meta.title }}" />
+    <meta property="og:description" content="{{ page.meta.description }}" />
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:site_name" content="Viable Industries, L.L.C." />
+    <meta property="og:image" content="{{ page.meta.image }}" />
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <title>{{ page.meta.title }}</title>
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+  </head>
+
+  <body class="{{ page.class }}">
+
+    {% include header-index.html %}
+
+    <main class="site-content">
+      {{ content }}
+    </main>
+
+    {% include purpose-index.html %}
+
+    {% include team-index.html %}
+
+    {% include footer-index.html %}
+    
+    <script type="text/javascript" src="//use.typekit.net/eks4tss.js"></script>
+    <script type="text/javascript">
+      try {
+        Typekit.load();
+      }catch(e){
+        console.error('Could not load Typekit');
+      }
+    </script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34872199-1']);
+      _gaq.push(['_setDomainName', 'viableindustries.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+  </body>
+
+</html>
