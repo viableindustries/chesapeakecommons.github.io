@@ -1434,6 +1434,20 @@ img {
   -moz-filter: grayscale(0%);
   -webkit-filter: grayscale(0%); }
 
+@media screen and (max-width: 48em) {
+  .widescreen .site-header h1,
+  .widescreen .site-purpose h1 {
+    font-size: 2.5em; }
+
+  .widescreen .site-header h3,
+  .widescreen .site-purpose h3 {
+    font-size: 2em;
+    letter-spacing: 0;
+    padding-left: 8px;
+    padding-right: 8px; }
+
+  .widescreen .site-content {
+    padding: 0 16px; } }
 @font-face {
   font-family: "retina-icon";
   src: url("../fonts/retina-icon.eot");
