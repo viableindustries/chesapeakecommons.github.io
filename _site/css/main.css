@@ -869,7 +869,7 @@ figure {
     padding: 64px 0;
     text-align: center; }
     .widescreen .site-title img {
-      max-width: 100%;
+      max-width: 88%;
       width: 21.25em; }
   .widescreen .site-content {
     background-color: transparent;
