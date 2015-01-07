@@ -665,7 +665,7 @@ a,
 a:active,
 a:link,
 a:visited {
-  background-image: linear-gradient(to right, #f0fd37 50%, transparent 50%);
+  background-image: linear-gradient(to right, #2578bb 50%, transparent 50%);
   background-size: 200% 100%;
   color: #222222;
   cursor: pointer;
@@ -755,7 +755,7 @@ figure {
     .navigation-primary ul li a:active,
     .navigation-primary ul li a:link,
     .navigation-primary ul li a:visited {
-      background-image: linear-gradient(to right, transparent 50%, #f0fd37 50%);
+      background-image: linear-gradient(to right, transparent 50%, #2578bb 50%);
       background-size: 200% 100%;
       color: #222222;
       display: inline-block;
@@ -771,7 +771,7 @@ figure {
       .navigation-primary ul li a:active.active,
       .navigation-primary ul li a:link.active,
       .navigation-primary ul li a:visited.active {
-        background-color: #f0fd37;
+        background-color: #2578bb;
         color: #222222;
         text-decoration: none; }
     .navigation-primary ul li a:hover {
@@ -837,7 +837,7 @@ figure {
   max-width: 100%; }
   .widescreen .site-header,
   .widescreen .site-purpose {
-    background-color: #f0fd37;
+    background-color: #2578bb;
     float: left;
     margin: 0;
     padding: 0;
@@ -846,7 +846,7 @@ figure {
     .widescreen .site-header h1,
     .widescreen .site-purpose h1 {
       border-top: 0;
-      color: #222222;
+      color: #fcfcfc;
       font-size: 4em;
       text-align: center;
       margin: 0 auto;
@@ -854,7 +854,7 @@ figure {
       padding: 64px 0 128px; }
     .widescreen .site-header h3,
     .widescreen .site-purpose h3 {
-      color: #222;
+      color: #fcfcfc;
       font-size: 3em;
       letter-spacing: 0;
       margin: 0 auto;
@@ -983,7 +983,7 @@ figure {
     .widescreen .site-copyright a:visited {
       background-image: none;
       background-color: transparent;
-      color: rgba(240, 253, 55, 0.9); }
+      color: #2578bb; }
     .widescreen .site-footer a:hover,
     .widescreen .site-copyright a:hover {
       text-decoration: underline; }
@@ -1157,7 +1157,7 @@ figure {
   margin-top: 196px;
   padding: 16px 32px 8px 8px; }
   .site-title.active {
-    background-color: #f0fd37; }
+    background-color: #2578bb; }
   .site-title img {
     max-width: 11.25em;
     min-width: 11.25em;
@@ -5204,9 +5204,9 @@ img {
     color: #222222; }
   .icon.icon-brand:before {
     background-color: #fcfcfc;
-    color: #eefd1e; }
+    color: #216aa6; }
   .icon.icon-brand.inverse:before {
-    background-color: #f0fd37;
+    background-color: #2578bb;
     color: #fcfcfc; }
   .icon.icon-xsmall:before {
     font-size: 8px;
